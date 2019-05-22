@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Tsunami",
+        "artist": "Southern All Stars",
+        "image": "https://img.clloz.com/project/music-player/img/tsunami.jpg",
+        "src": "https://img.clloz.com/project/music-player/music/tsunami.mp3"
+    },
+    {
+        "name": "Swimming",
+        "artist": "Everything Little Thing",
+        "image": "https://img.clloz.com/project/music-player/img/swim.jpg",
+        "src": "https://img.clloz.com/project/music-player/music/swim.mp3"
+    },
+    {
+        "name": "My Friend",
+        "artist": "Zard",
+        "image": "https://img.clloz.com/project/music-player/img/zard.png",
+        "src": "https://img.clloz.com/project/music-player/music/zard.mp3"
+    },
+    {
+        "name": "Re:make",
+        "artist": "One Ok Rock",
+        "image": "https://img.clloz.com/project/music-player/img/remake.jpg",
+        "src": "https://img.clloz.com/project/music-player/music/remake.mp3"
+    },
+    {
+        "name": "Hitomi Wo Tojite",
+        "artist": "Ayaka",
+        "image": "https://img.clloz.com/project/music-player/img/hitomi.jpg",
+        "src": "https://img.clloz.com/project/music-player/music/hitomi.mp3"
+    },
+    {
+        "name": "One More Time",
+        "artist": "Yamasaki",
+        "image": "https://img.clloz.com/project/music-player/img/onemoretime.jpg",
+        "src": "https://img.clloz.com/project/music-player/music/onemoretime.mp3"
+    }
+]
