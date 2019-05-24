@@ -14,10 +14,12 @@
 
 html, body, section {
     height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 
 body {
+    position: relative;
     font-family: 'sailregular';
 }
 
