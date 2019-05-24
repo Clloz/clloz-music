@@ -13,16 +13,12 @@
 }
 
 html, body, section {
+    height: 100%;
     overflow: hidden;
 }
 
 body {
-    height: 100vh;
     font-family: 'sailregular';
-}
-
-section {
-    height: 100%;
 }
 
 .clearfix::after {
@@ -45,7 +41,7 @@ section {
 
 .layout {
     width: 600px;
-    height: calc(100% - 24vmin);
+    height: 76%;
     margin: 0 auto;
     padding-top: 12vh;
 }
@@ -240,7 +236,7 @@ section {
 }
 
 footer {
-    height: 24vmin;
+    height: 24%;
     color: white;
     background: rgba(255, 255, 255, 0.3)
 }
