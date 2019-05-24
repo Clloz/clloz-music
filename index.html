@@ -99,8 +99,9 @@
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
     <script>
+      var wrap_width = $('.layout .detail .title').width();
       var title_width = $(".detail .title h1").width();
-      if (title_width > 400) {
+      if (title_width > wrap_width) {
         $(".detail .title h1").addClass("animate");
       }
     </script>

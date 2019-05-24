@@ -125,7 +125,7 @@ section {
 .layout .detail .title {
     position: relative;
     margin-top: 2vmin;
-    width: 400px;
+    width: 80%;
     height: 5.25vmin;
     overflow: hidden;
     white-space: nowrap;
@@ -135,7 +135,7 @@ section {
     position: absolute;
     top: 0;
     /* left: 0; */
-    width: 800px;
+    width: 200%;
     font-size: 3.5vmin;
 }
 
