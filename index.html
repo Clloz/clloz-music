@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>musicPlayer</title>
+    <meta name="referrer" content="no-referrer" />
+    <title>clloz-music</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -12,36 +13,96 @@
     />
   </head>
   <body>
-    <div class="cover"></div>
-    <div class="music-box">
-      <img src="" alt="cover" class="avatar" />
-      <div class="music-panel">
-        <h4 class="name">Tsunami</h4>
-        <div class="mid">
-          <div class="progress" data-time="00:00/00:00"></div>
-          <div class="current"></div>
-          <div class="volume">
-            <div class="vol-control"></div>
-            <div class="vol-current"></div>
-            <!-- <div class="cursor" data-value="20px"></div> -->
-          </div>
-          <div class="vol">
-            <span><i class="fa fa-volume-up"></i></span>
+    <section class="page-music">
+      <main class="layout clearfix">
+        <div class="aside">
+          <img class="avatar" src="img/zard.png" alt="zard" />
+          <div class="actions">
+            <div class="item">
+              <i class="fa fa-heart-o"></i><span>1000</span>
+            </div>
+            <div class="item">
+              <i class="fa fa-headphones"></i><span>3000</span>
+            </div>
+            <div class="item">
+              <i class="fa fa-thumbs-up"></i><span>200</span>
+            </div>
           </div>
         </div>
-        <ul class="control">
-          <li class="btn btn-back"><i class="fa fa-backward"></i></li>
-          <li class="btn btn-play pause">
-            <i class="fa fa-play"></i><i class="fa fa-pause"></i>
-          </li>
-          <li class="btn btn-next"><i class="fa fa-forward"></i></li>
-          <li class="btn btn-list"><i class="fa fa-music"></i></li>
-        </ul>
-      </div>
-      <!-- <ul class="song-list"></ul> -->
-      <div class="list-wrap"><ul class="song-list"></ul></div>      
-    </div>
-    <div class="disabled">Disconnect, Please Wait.<i class="fa fa-spin fa-spinner"></i></div>
+        <div class="detail">
+          <span class="tags">日语</span>
+          <div class="title">
+            <h1>One more time One more Chance 山崎将义</h1>
+            <h1>One more time One more Chance 山崎将义</h1>
+          </div>
+          <div class="actions">
+            <div class="item">
+              <i class="fa fa-backward"></i>
+            </div>
+            <div class="item">
+              <i class="fa fa-play"></i>
+            </div>
+            <div class="item">
+              <i class="fa fa-forward"></i>
+            </div>
+            <div class="item">
+              <i class="fa fa-music"></i>
+            </div>
+          </div>
+          <div class="progress" data-time="00:00 / 04:35"></div>
+          <div class="lyric">
+            <p>これ以上何を失えば 　心は许されるの</p>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="box layout">
+          <i class="fa fa-chevron-left"></i>
+          <i class="fa fa-chevron-right"></i>
+          <ul>
+            <li>
+              <div class="cate">
+                <img class="avatar" src="img/onemoretime.jpg" alt="" />
+                <h3>one more time</h3>
+              </div>
+            </li>
+            <li>
+              <div class="cate">
+                <img class="avatar" src="img/remake.jpg" alt="" />
+                <h3>re:make</h3>
+              </div>
+            </li>
+            <li>
+              <div class="cate">
+                <img class="avatar" src="img/hitomi.jpg" alt="" />
+                <h3>Hitomi</h3>
+              </div>
+            </li>
+            <li>
+              <div class="cate">
+                <img class="avatar" src="img/swim.jpg" alt="" />
+                <h3>swim</h3>
+              </div>
+            </li>
+            <li>
+              <div class="cate">
+                <img class="avatar" src="img/tsunami.jpg" alt="" />
+                <h3>Tsunami</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </section>
+    <section class="page-cover"></section>
+    <div class="cover"></div>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+      var title_width = $(".detail .title h1").width();
+      if (title_width > 400) {
+        $(".detail .title h1").addClass("animate");
+      }
+    </script>
   </body>
 </html>
