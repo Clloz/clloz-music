@@ -12,10 +12,13 @@
     font-style: normal;
 }
 
+html, body, section {
+    overflow: hidden;
+}
+
 body {
     height: 100vh;
     font-family: 'sailregular';
-    overflow: hidden;
 }
 
 section {
