@@ -35,7 +35,7 @@ body {
     right: -10px;
     bottom: -10px;
     left: -10px;
-    background: url('../img/totoro.jpg') center center no-repeat;
+    background: url('http://qukufile2.qianqian.com/data2/pic/463a1f8be7c83a42195f498974358336/946499/946499.jpg@s_2,w_300,h_300') center center no-repeat;
     background-size: cover;
     filter: blur(5px) brightness(0.5);
     z-index: -1;
@@ -140,12 +140,17 @@ body {
     font-size: 3.5vmin;
 }
 
+.layout .detail .title .artist {
+    color: rgba(239, 86, 76, 0.9);
+    font-size: 2.5vmin;
+}
+
 .layout .detail .title h1:first-child {
     left: 0;
 }
 
 .layout .detail .title h1:last-child {
-    right: 0;
+    right: -300%;
 }
 
 .layout .detail .title h1:first-child.animate {
@@ -224,6 +229,16 @@ body {
     border-radius: 2.5px;
 }
 
+.layout .detail .progress .cur {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 5px;
+    background: #e87b00;
+    border-radius: 2.5px;
+}
+
 .layout .detail .progress::after {
     content: attr(data-time);
     position: absolute;
@@ -235,6 +250,12 @@ body {
 .layout .detail .lyric {
     margin-top: 4vmin;
     font-size: 3vmin;
+    font-family: 'STSong'
+}
+
+.layout .detail .lyric .boom-text {
+    display: inline-block;
+    opacity: 0;
 }
 
 footer {
@@ -246,6 +267,7 @@ footer {
 footer .box {
     position: relative;
     padding: 0px;
+    height: 100%;
 }
 
 .box i {
@@ -269,28 +291,42 @@ footer .box {
     right: -5vmin;
 }
 
+.box .ul-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 .box ul {
-    padding: 4vmin 3vmin;
+    position: absolute;
+    left: 0;
+    top: 0;
     list-style: none;
 }
 
 .box ul li {
     display: inline-block;
     text-align: center;
-    margin-left: 2vmin;
+    margin: 3vmin 2vmin;
+    padding: 1vmin;
+    /* border: 1px solid transparent; */
+    border-radius: 5px;
     cursor: pointer;
 }
-.box ul li:hover {
-    box-shadow: 0 0 .5vmin .5vmin rgba(255, 255, 255, 0.5)
+.box ul li.active,
+.box ul li:hovero {
+    /* border: 1px solid; */
+    box-shadow: 0 0 .3vmin .3vmin rgba(255, 255, 255, 1);
 }
 
 .box .cate img {
-    width: 15vmin;
-    height: 15vmin;
+    width: 12vmin;
+    height: 12vmin;
     border-radius: 5px;
     object-fit: cover;
 }
 
 .box .cate h3 {
-    font-size: 3vmin;
+    font-size: 2vmin;
 }

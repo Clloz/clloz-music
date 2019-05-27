@@ -11,12 +11,13 @@
       rel="stylesheet"
       href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css" rel="stylesheet">
   </head>
   <body>
     <section class="page-music">
       <main class="layout clearfix">
         <div class="aside">
-          <img class="avatar" src="img/zard.png" alt="zard" />
+          <img class="avatar" src="http://qukufile2.qianqian.com/data2/pic/463a1f8be7c83a42195f498974358336/946499/946499.jpg@s_2,w_300,h_300" alt="zard" />
           <div class="actions">
             <div class="item">
               <i class="fa fa-heart-o"></i><span>1000</span>
@@ -30,28 +31,27 @@
           </div>
         </div>
         <div class="detail">
-          <span class="tags">日语</span>
+          <span class="tags">秋日私语</span>
           <div class="title">
-            <h1>One more time One more Chance 山崎将义</h1>
-            <h1>One more time One more Chance 山崎将义</h1>
+            <h1><span class="name">美人鱼</span> <span class="artist">林俊杰</span></h1>
+            <h1><span class="name">美人鱼</span> <span class="artist">林俊杰</span></h1>
           </div>
           <div class="actions">
             <div class="item">
-              <i class="fa fa-backward"></i>
+              <i class="btn-like fa fa-heart-o"></i>
             </div>
             <div class="item">
-              <i class="fa fa-play"></i>
+              <i class="btn-play fa fa-play"></i>
             </div>
             <div class="item">
-              <i class="fa fa-forward"></i>
-            </div>
-            <div class="item">
-              <i class="fa fa-music"></i>
+              <i class="btn-next fa fa-step-forward"></i>
             </div>
           </div>
-          <div class="progress" data-time="00:00 / 04:35"></div>
+          <div class="progress" data-time="00:00 / 04:15">
+            <div class="cur"></div>
+          </div>
           <div class="lyric">
-            <p>これ以上何を失えば 　心は许されるの</p>
+            <p></p>
           </div>
         </div>
       </main>
@@ -59,51 +59,23 @@
         <div class="box layout">
           <i class="fa fa-chevron-left"></i>
           <i class="fa fa-chevron-right"></i>
-          <ul>
-            <li>
-              <div class="cate">
-                <img class="avatar" src="img/onemoretime.jpg" alt="" />
-                <h3>one more time</h3>
-              </div>
-            </li>
-            <li>
-              <div class="cate">
-                <img class="avatar" src="img/remake.jpg" alt="" />
-                <h3>re:make</h3>
-              </div>
-            </li>
-            <li>
-              <div class="cate">
-                <img class="avatar" src="img/hitomi.jpg" alt="" />
-                <h3>Hitomi</h3>
-              </div>
-            </li>
-            <li>
-              <div class="cate">
-                <img class="avatar" src="img/swim.jpg" alt="" />
-                <h3>swim</h3>
-              </div>
-            </li>
-            <li>
-              <div class="cate">
-                <img class="avatar" src="img/tsunami.jpg" alt="" />
-                <h3>Tsunami</h3>
-              </div>
-            </li>
-          </ul>
+          <div class="ul-wrap">
+            <ul>
+              <!-- <li>
+                <div class="cate">
+                  <img class="avatar" src="img/onemoretime.jpg" alt="" />
+                  <h3>one more time</h3>
+                </div>
+              </li> -->
+            </ul>
+          </div>
         </div>
       </footer>
     </section>
     <section class="page-cover"></section>
     <div class="cover"></div>
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/boomtext.js"></script>
     <script src="./js/index.js"></script>
-    <script>
-      var wrap_width = $('.layout .detail .title').width();
-      var title_width = $(".detail .title h1").width();
-      if (title_width > wrap_width) {
-        $(".detail .title h1").addClass("animate");
-      }
-    </script>
   </body>
 </html>
