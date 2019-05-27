@@ -1,5 +1,5 @@
 $.fn.boomText = function (type) {
-    type = type || 'rollIn'
+    type = type || 'zoomIn'
     this.html(function () {
         var arr = $(this).text().split('').map(function (word) {
             return `<span class="boom-text">${word}</span>`

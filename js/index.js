@@ -199,7 +199,7 @@ var FM = (function () {
             if (lyricObj[time]) {
                 // console.log(lyricObj[time])
                 $('.detail .lyric p').text(lyricObj[time])
-                $('.detail .lyric p').boomText()
+                $('.detail .lyric p').boomText('rollIn')
             }
         }
 
@@ -235,7 +235,7 @@ var FM = (function () {
                 // console.log(this, arguments)
                 fn.call(this, arguments)
                 throttle = false
-            }, 200)
+            }, 100)
         }
     }
 
@@ -256,7 +256,7 @@ var FM = (function () {
                         })
                     }
                 })
-                // console.log(lyricObj)
+                console.log(lyricObj)
             })
     }
 
